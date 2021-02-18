@@ -24,6 +24,6 @@ public class SampleController {
   public String getString(){
     return "\"contract test for second consumer\"";
   }
-  //push test 2
+  //push test 3
 
 }
