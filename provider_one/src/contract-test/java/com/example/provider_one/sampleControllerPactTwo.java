@@ -13,18 +13,18 @@ import au.com.dius.pact.provider.spring.target.SpringBootHttpTarget;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@RunWith(SpringRestPactRunner.class)
-@SpringBootTest(webEnvironment = RANDOM_PORT)
-@Provider("provider_one")
-@Consumer("consumer_two")
-@PactBroker(host = "localhost",port = "9292")
-public class sampleControllerPactTwo {
-
-  @TestTarget
-  public Target target = new SpringBootHttpTarget();
-
-  @State("test GET string")
-  public void testGetConsumerTwo(){
-
-  }
-}
+//@RunWith(SpringRestPactRunner.class)
+//@SpringBootTest(webEnvironment = RANDOM_PORT)
+//@Provider("provider_one")
+//@Consumer("consumer_two")
+//@PactBroker(host = "localhost",port = "9292")
+//public class sampleControllerPactTwo {
+//
+//  @TestTarget
+//  public Target target = new SpringBootHttpTarget();
+//
+//  @State("test GET string")
+//  public void testGetConsumerTwo(){
+//
+//  }
+//}

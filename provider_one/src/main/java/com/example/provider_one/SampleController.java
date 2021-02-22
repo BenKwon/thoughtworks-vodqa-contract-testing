@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class SampleController {
 
-  @GetMapping("/vodqa")
+//  @GetMapping("/vodqa")
   public ZonedDateTime getZonedDateTime(){
     Date date = new Date();
     final ZoneId id = ZoneId.systemDefault();
     return ZonedDateTime.ofInstant(date.toInstant(), id);
   }
 
-  @GetMapping("/vodqa_shot")
+  @GetMapping("/vodqa")
   public String getString(){
     return "\"contract test for second consumer\"";
   }
