@@ -4,7 +4,7 @@ This reposiroty consists of code used for demo in talk give at "Thoughtworks vod
 
 ## Setup instructions:
 
-### 1. Setting up pack broker:
+### 1. Setting up pack broker: 
 1. Clone this repository.
 2. Start docker in the machine.
 Install docker in your machine from [here](https://www.docker.com/products/docker-desktop) if you dont have it.
