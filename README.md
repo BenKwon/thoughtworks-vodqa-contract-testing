@@ -20,6 +20,18 @@ Install docker in your machine from [here](https://www.docker.com/products/docke
 
 4. If every thing goes well, you should be able to access the pact broker UI at http://localhost:9292
 
+or instead of upon steps
+
+$ docker run -d --name postgres -p  5432:5432 \
+-e POSTGRES_USER=oauth -e POSTGRES_PASSWORD=oauth123 -e POSTGRES_DB=oauth postgres
+
+$ docker run -d --name pact-broker --link postgres:postgres -p 9292:9292 \
+-e PACT_BROKER_DATABASE_USERNAME=oauth \
+-e PACT_BROKER_DATABASE_PASSWORD=oauth123 \
+-e PACT_BROKER_DATABASE_HOST=postgres \
+-e PACT_BROKER_DATABASE_NAME=oauth pactfoundation/pact-broker
+```
+
 ----
 ### 2. Setting up the consumers and provider in IDE:
 
