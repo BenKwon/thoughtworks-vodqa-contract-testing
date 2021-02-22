@@ -4,7 +4,7 @@ This reposiroty consists of code used for demo in talk give at "Thoughtworks vod
 
 ## Setup instructions:
 
-### 1. Setting up pack broker: 
+### 1. Setting up pact broker: 
 1. Clone this repository.
 2. Start docker in the machine.
 Install docker in your machine from [here](https://www.docker.com/products/docker-desktop) if you dont have it.
@@ -20,7 +20,7 @@ Install docker in your machine from [here](https://www.docker.com/products/docke
 
 4. If every thing goes well, you should be able to access the pact broker UI at http://localhost:9292
 
-or instead of upon steps
+### or instead of upon steps to set up pact broker
 ```sh
 $ docker run -d --name postgres -p  5432:5432 \
 -e POSTGRES_USER=oauth -e POSTGRES_PASSWORD=oauth123 -e POSTGRES_DB=oauth postgres
